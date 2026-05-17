@@ -33,14 +33,14 @@ function CelebrityHero(props) {
     },
     bioExcerpt: { fontSize: '1.05rem', lineHeight: '1.8', color: 'var(--text-slate)', maxWidth: '450px' },
     imageWrapper: {
-      width: '100%',
-      maxWidth: '380px',              // Mobile ke hisab se image wrapper ka size thoda adjust kiya
-      height: 'auto',
-      aspectRatio: '3/4',             // Image ka shape vertical luxury rectangle hi rahega
-      border: '1px solid var(--accent-champagne)',
-      padding: '12px',
-      margin: '0 auto',               // Mobile par photo center me dikhegi
-    },
+    width: '100%',
+    maxWidth: '380px',              // Mobile ke hisab se image wrapper ka size thoda adjust kiya
+    height: 'auto',
+    aspectRatio: '3/4',             // Image ka shape vertical luxury rectangle hi rahega
+    border: '1px solid var(--accent-champagne)',
+    padding: '12px',
+    margin: '0 auto',               // Mobile par photo center me dikhegi
+  },
     image: { width: '100%', height: '100%', objectFit: 'cover' }
   };
 
