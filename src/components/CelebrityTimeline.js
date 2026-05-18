@@ -3,7 +3,7 @@ import React from 'react';
 function CelebrityTimeline() {
   // 1. Humne ek Array banaya jisme objects hain (saal aur milestone)
   const milestones = [
-    { year: "1973", title: "Zanjeer", desc: "Established the 'Angry Young Man' persona that redefined Indian cinema." },
+    { year: "2026", title: "Inside The Match", desc: "Established the 'Angry Young Man' persona that redefined Indian cinema." },
     { year: "1975", title: "Sholay & Deewaar", desc: "Starred in historic blockbusters, cementing global cinematic legacy." },
     { year: "2000", title: "Kaun Banega Crorepati", desc: "Revolutionized Indian television as the iconic host of KBC." },
     { year: "2015", title: "Piku (National Award)", desc: "Won his fourth National Film Award for Best Actor." }

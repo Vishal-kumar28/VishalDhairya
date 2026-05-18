@@ -13,7 +13,7 @@ function App() {
       {/* Hum yahan se attributes ke roop me data bhej rahe hain */}
     <CelebrityHero 
         initials="V.D."
-        profession="Cinema Icon & Philanthropist"
+        profession="Computer Science Engineer, Actor & Youtuber"
         name="#Vishal Dhairya"
         bio="An icon of cinematic excellence spanning over five decades. Shaping the narrative of Indian cinema with powerful performances and an enduring global legacy."
         imageUrl="vishaldhairya.jpeg" // Example premium portrait

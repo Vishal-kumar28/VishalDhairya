@@ -5,14 +5,14 @@ function CelebrityHero(props) {
   const styles = {
     // ... saari styles purane code jaisi hi rahengi ...
     container: {
-      padding: '20px max(5vw, 20px)', // Mobile ke liye padding thodi kam ki
+      padding: '120px max(5vw, 20px) 40px max(5vw, 20px)', // Mobile ke liye padding thodi kam ki
       minHeight: 'auto',              // ❌ '90vh' ko hata kar 'auto' kar diya taaki zabardasti space na bane
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'flex-start',   // ❌ 'space-between' ko hata kar 'flex-start' kiya taaki content upar se shuru ho
       gap: '40px',                    // Nav bar aur content ke beech ka gap fix kar diya
     },
-    nav: { display: 'flex', justifyContent: 'space-between', fontFamily: 'var(--font-serif)', fontSize: '1.2rem', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '20px' },
+    nav: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', fontFamily: 'var(--font-serif)', fontSize: '1.2rem', borderBottom: '1px solid rgba(0,0,0,0.05)', padding: '20px max(5vw, 20px)', boxSizing: 'border-box', letterSpacing: '1px', position: 'fixed', top: '0', left: '0', zIndex: 1000, backgroundColor: 'rgba(250, 249, 246, 0.85)', backdropFilter: 'blur(10px)', },
     mainContent: {
       display: 'grid',
       // 💡 Ye line responsive grid banayegi: Mobile par upar-niche (1fr) aur Laptop par aamne-saamne (repeat(auto-fit...))
@@ -57,14 +57,13 @@ function CelebrityHero(props) {
       </header>
 
       <main style={styles.mainContent}>
-        <div>
-          {/* JSX me variable use karne ke liye {} lagate hain */}
-          <p style={styles.tagline}>{props.profession}</p> 
-          <h1 style={styles.celebrityName}>{props.name}</h1> 
+        <div className="animate-fade-up" style={styles.textContent}>
+          <span style={styles.tagline}>{props.profession}</span>
+          <h1 style={styles.celebrityName}>{props.name}</h1>
           <p style={styles.bioExcerpt}>{props.bio}</p>
         </div>
 
-        <div>
+        <div className="animate-fade-in">
           <div style={styles.imageWrapper}>
             <img style={styles.image} src={props.imageUrl} alt={props.name} />
           </div>

@@ -66,7 +66,7 @@ function About() {
         {/* Aap public folder wali kisi image ka naam yahan daal sakte hain */}
         <img 
           style={styles.image} 
-          src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?w=600" 
+          src="AboutImage.jpg" 
           alt="Celebrity Candid" 
         />
       </div>

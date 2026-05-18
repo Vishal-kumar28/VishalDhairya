@@ -19,3 +19,34 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
 }
+
+/* 1. Text ke liye: Niche se upar slide aur fade hone ka animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* 30px niche se shuru hoga */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* Apni asli jagah par aa jayega */
+  }
+}
+
+/* 2. Photo ke liye: Makkhan jaisa smooth fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Classes jo hum React me use karenge */
+.animate-fade-up {
+  animation: fadeInUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
