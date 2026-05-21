@@ -50,3 +50,42 @@ body {
 .animate-fade-in {
   animation: fadeIn 1.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
+
+/* --- RESPONSIVE NAVBAR STYLING --- */
+
+/* 💻 LAPTOP/DESKTOP STYLES (Default setup) */
+.desktop-links {
+  display: flex;
+  gap: 30px;
+}
+.desktop-link {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--text-onyx);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.mobile-menu-btn {
+  display: none; /* Laptop par button nahi dikhega */
+}
+
+/* 📱 MOBILE PHONE STYLES (768px se choti screens par) */
+@media (max-width: 768px) {
+  .desktop-links {
+    display: none !important; /* Phone par laptop links gayab */
+  }
+  
+  .mobile-menu-btn {
+    display: block !important; /* Phone par MENU button chalu */
+    background: none;
+    border: none;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: var(--text-onyx);
+    font-weight: 500;
+    padding: 5px 10px;
+  }
+}

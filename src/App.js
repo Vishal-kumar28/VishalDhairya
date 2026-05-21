@@ -1,41 +1,45 @@
-import React from 'react';
-import CelebrityHero from './components/Hero';
+import React, { useState } from 'react';
+import CelebrityHero from './components/Hero'; // Sahi hai, aapki file Hero.js hi hai
 import About from './components/About';
-import CelebrityTimeline from './components/CelebrityTimeline';
-import CelebrityGallery from './components/CelebrityGallery';
+import CelebrityTimeline from './components/CelebrityTimeline'; // 🚀 Biography ki jagah ye naam hai
+import CelebrityGallery from './components/CelebrityGallery';   // 🚀 Work ki jagah aapka ye gallery component hai
 import CelebrityContact from './components/CelebrityContact';
 import Footer from './components/Footer';
-import './index.css'; // Global styles (including scroll behavior)
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('home'); 
+
+  const celebrityData = {
+    initials: "V.D.",
+    name: "#VISHAL DHAIRYA",
+    profession: "Computer Science Engineer, Actor & Youtuber",
+    bio: "धैर्य सर्वस्य साधनम् ",
+    imageUrl: "vishaldhairya.jpeg"
+  };
+
   return (
-    <div>
-      {/* Hum yahan se attributes ke roop me data bhej rahe hain */}
-    <CelebrityHero 
-        initials="V.D."
-        profession="Computer Science Engineer, Actor & Youtuber"
-        name="#Vishal Dhairya"
-        bio="An icon of cinematic excellence spanning over five decades. Shaping the narrative of Indian cinema with powerful performances and an enduring global legacy."
-        imageUrl="vishaldhairya.jpeg" // Example premium portrait
+    <div style={{ backgroundColor: '#faf9f6', minHeight: '100vh' }}>
+      
+      {/* Top Navbar Header */}
+      <CelebrityHero 
+        {...celebrityData} 
+        setCurrentPage={setCurrentPage} 
+        currentPage={currentPage}
       />
 
-    {/* 1. Biography section ke niche ise rakh diya */}  
-      <About />
+      {/* Conditional Content Switch */}
+      {currentPage === 'home' ? (
+        <>
+          <About />
+          <CelebrityTimeline /> {/* 🚀 Naya Component Name yahan use kiya */}
+          <CelebrityGallery />  {/* 🚀 Naya Component Name yahan use kiya */}
+        </>
+      ) : (
+        <CelebrityContact />
+      )}
 
-    {/* 2. Hero section ke bilkul niche ise rakh diya */}
-      <CelebrityTimeline />  
-
-    {/* 3. Timeline ke niche jod diya */}
-      <CelebrityGallery />  
-
-    {/* 4. Contact section ke niche jod diya */}
-      <CelebrityContact />
-
-    {/*Footer */}
       <Footer />
-
     </div>
-
   );
 }
 

@@ -19,7 +19,7 @@ function CelebrityGallery() {
 
   const styles = {
     section: { padding: '80px max(5vw, 20px)', backgroundColor: 'var(--bg-celebrity)', textAlign: 'center' },
-    heading: { fontFamily: 'var(--font-serif)', fontSize: '2.5rem', marginBottom: '30px', textTransform: 'uppercase' },
+    heading: { fontFamily: 'var(--font-serif)', fontSize: '2.5rem', marginBottom: '30px', textTransform: 'uppercase', fontWeight: '400', },
     filterContainer: { marginBottom: '40px', display: 'flex', justifyContent: 'center', gap: '20px' },
     button: (isActive) => ({
       padding: '10px 20px',

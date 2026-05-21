@@ -51,7 +51,7 @@ function CelebrityContact() {
   const styles = {
     section: { padding: '80px max(5vw, 20px)', backgroundColor: 'var(--bg-celebrity)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '50px', borderTop: '1px solid rgba(0,0,0,0.05)' },
     infoColumn: { display: 'flex', flexDirection: 'column', justifyContent: 'center' },
-    heading: { fontFamily: 'var(--font-serif)', fontSize: '2.5rem', marginBottom: '20px', textTransform: 'uppercase' },
+    heading: { fontFamily: 'var(--font-serif)', fontSize: '2.5rem', marginBottom: '20px', textTransform: 'uppercase', fontWeight: '400', },
     text: { color: 'var(--text-slate)', lineHeight: '1.8', marginBottom: '30px' },
     form: { display: 'flex', flexDirection: 'column', gap: '20px' },
     input: { padding: '15px', backgroundColor: 'transparent', border: 'none', borderBottom: '1px solid var(--text-slate)', color: 'var(--text-onyx)', fontFamily: 'var(--font-sans)', fontSize: '1rem', outline: 'none' },
