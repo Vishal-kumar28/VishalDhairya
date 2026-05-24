@@ -60,7 +60,7 @@ function Footer() {
            onMouseLeave={(e) => e.target.style.color = 'var(--text-slate)'}>
           LinkedIn
         </a>
-        <a href="https://www.youtube.com/@VishalDhairyaOfficial" target="_blank" rel="noreferrer" style={styles.link}
+        <a href="https://www.youtube.com/@InsideTheMatchByVishal" target="_blank" rel="noreferrer" style={styles.link}
            onMouseEnter={(e) => e.target.style.color = 'var(--text-onyx)'}
            onMouseLeave={(e) => e.target.style.color = 'var(--text-slate)'}>
           Youtube
