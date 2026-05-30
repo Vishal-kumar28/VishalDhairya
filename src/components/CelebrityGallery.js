@@ -11,7 +11,6 @@ function CelebrityGallery() {
     { id: 3, category: 'magazine', url: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400', title: 'Vogue Cover' },
     { id: 4, category: 'movies', url: 'BTS.jpg', title: 'Behind The Scenes' },
     { id: 5, category: 'movies', url: 'V1.jpg', title: 'Photo Session' },
-    
   ];
 
   // 3. Jo photos select hui category se match karengi, unhe filter karenge

@@ -5,21 +5,21 @@ function CelebrityTimeline() {
     {
       year: "2026",
       title: "Inside The Match",
-      desc: "I explore the Content creation space.",
+      desc: "My most watched videoon YouTube, where I take viewers — breaking down what really happens inside an IPL match",
       youtube: {
-        id: "Umzxxgys1zY",
+        id: "fEw1EtHNn5c?si",
         views: "10K Views",
       }
     },
-    {
-      year: "2026",
-      title: "Inside The Match",
-      desc: "I explore the Content creation space.",
-      youtube: {
-        id: "-55BwfZ82dE",
-        views: "6.5K Views",
-      }
-    },
+    // {
+    //   year: "2026",
+    //   title: "Inside The Match",
+    //   desc: "I explore the Content creation space.",
+    //   youtube: {
+    //     id: "-55BwfZ82dE",
+    //     views: "6.5K Views",
+    //   }
+    // },
   ];
 
   const styles = {
@@ -75,11 +75,14 @@ function CelebrityTimeline() {
       position: 'relative',
       borderRadius: '4px',
       overflow: 'hidden',
-      aspectRatio: '16/9',
+      aspectRatio: '16/9',   // ← changed from 16/9
       border: '1px solid rgba(180,150,100,0.3)',
       boxShadow: '0 8px 32px rgba(0,0,0,0.10)',
       backgroundColor: '#000',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      width: '35%',          // ← smaller since it's vertical
+      margin: '40px auto',
+
     },
     videoThumb: {
       width: '100%',
@@ -87,6 +90,7 @@ function CelebrityTimeline() {
       objectFit: 'cover',
       display: 'block',
       transition: 'transform 0.4s ease, opacity 0.3s ease',
+      justifyContent: 'center',
     },
     playButton: {
       position: 'absolute',
@@ -101,7 +105,7 @@ function CelebrityTimeline() {
       alignItems: 'center',
       justifyContent: 'center',
       pointerEvents: 'none',
-      boxShadow: '0 4px 20px rgba(0,0,0,0.25)'
+      boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
     },
     playTriangle: {
       width: 0,
@@ -109,7 +113,8 @@ function CelebrityTimeline() {
       borderTop: '9px solid transparent',
       borderBottom: '9px solid transparent',
       borderLeft: '16px solid #1a1a1a',
-      marginLeft: '4px'
+      marginLeft: '4px',
+
     },
     videoViews: {
       position: 'absolute',
@@ -121,7 +126,9 @@ function CelebrityTimeline() {
       letterSpacing: '0.5px',
       padding: '3px 8px',
       borderRadius: '2px',
-      backdropFilter: 'blur(4px)'
+      backdropFilter: 'blur(4px)',
+      justifyContent: 'center',
+      display: 'flex',
     }
   };
 
