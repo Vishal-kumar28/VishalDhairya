@@ -5,9 +5,9 @@ function CelebrityTimeline() {
     {
       year: "2026",
       title: "Inside The Match",
-      desc: "My most watched videoon YouTube, where I take viewers — breaking down what really happens inside an IPL match",
+      desc: "My most watched video on YouTube, where I take viewers — breaking down what really happens inside an IPL match",
       youtube: {
-        id: "fEw1EtHNn5c?si",
+        id: "l3hWFn1J2Fw",
         views: "10K Views",
       }
     },
