@@ -19,7 +19,7 @@ function CelebrityGallery() {
     : photos.filter(p => p.category === currentCategory);
 
   const styles = {
-    section: { padding: '80px max(5vw, 20px)', backgroundColor: 'var(--bg-celebrity)', textAlign: 'center' },
+    section: { padding: '80px max(5vw, 20px)', backgroundColor: 'var(--bg-celebrity)', textAlign: 'center', borderTop: '1px solid rgba(0,0,0,0.05)', },
     heading: { fontFamily: 'var(--font-serif)', fontSize: '2.5rem', marginBottom: '30px', textTransform: 'uppercase', fontWeight: '400', },
     filterContainer: { marginBottom: '40px', display: 'flex', justifyContent: 'center', gap: '20px' },
     button: (isActive) => ({
@@ -34,6 +34,7 @@ function CelebrityGallery() {
       textTransform: 'uppercase',
       transition: 'all 0.3s'
     }),
+    
     grid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' },
     img: { width: '100%', height: '300px', objectFit: 'cover', filter: 'grayscale(20%)' }
   };

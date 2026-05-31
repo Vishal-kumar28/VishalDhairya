@@ -72,7 +72,10 @@ function Footer() {
 
       {/* Copyright Text */}
       <div style={styles.copyright}>
-        © {currentYear} Vishal Dhairya. All Rights Reserved. Crafted with Elegance.
+        © {currentYear} Vishal Dhairya. All Rights Reserved.
+      </div>
+      <div style={styles.copyright}>
+        Crafted with Elegance.
       </div>
     </footer>
   );

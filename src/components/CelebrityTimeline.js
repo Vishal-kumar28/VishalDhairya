@@ -55,8 +55,9 @@ function CelebrityTimeline() {
       display: 'flex',
     },
     title: {
+      
+      fontFamily: 'var(--font-serif)',
       fontSize: '1.2rem',
-      fontWeight: '600',
       margin: '0 0 10px 0',
       color: 'var(--text-onyx)',
       justifyContent: 'center',
