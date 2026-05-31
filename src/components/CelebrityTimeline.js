@@ -80,7 +80,7 @@ function CelebrityTimeline() {
       boxShadow: '0 8px 32px rgba(0,0,0,0.10)',
       backgroundColor: '#000',
       cursor: 'pointer',
-      width: '35%',          // ← smaller since it's vertical
+      width: '50%',          // ← smaller since it's vertical
       margin: '40px auto',
 
     },
