@@ -80,12 +80,11 @@ function About() {
         </p>
         
         <p style={styles.story}>
-          Spanning a career that has defined generations, [Vishal Dhairya] has consistently 
-          pushed the boundaries of cinematic storytelling. From humble beginnings in theater 
-          to becoming a global icon, the journey is built on artistic integrity, relentless 
-          dedication, and a passion for deep, meaningful narratives. Beyond the silver screen, 
-          they are deeply committed to social causes, using their global platform to advocate 
-          for education and sustainability.
+          A unique blend of engineering, performance, and digital storytelling, <strong>Vishal Dhairya</strong> is redefining what it means to be a modern creator. Transitioning seamlessly from the analytical world of Computer Science Engineering to the expressive realms of theater and film, his journey is driven by a passion for impactful storytelling. Through every character portrayed on screen and every narrative shared with his growing audience, he bridges the gap between technical precision and deep, artistic expression.
+        </p>
+
+        <p style={styles.quote}>
+          "Art is where logic meets emotion. Whether it's through lines of code, a cinematic performance, or a story told to thousands online."
         </p>
       </div>
 

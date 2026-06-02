@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Footer() {
-  const currentYear = new Date().getFullYear(); // Ye automatic chal rahe saal ko catch kar lega
+  // const currentYear = new Date().getFullYear(); // Ye automatic chal rahe saal ko catch kar lega
 
   const styles = {
     footer: {
@@ -72,7 +72,7 @@ function Footer() {
 
       {/* Copyright Text */}
       <div style={styles.copyright}>
-        © {currentYear} Vishal Dhairya. All Rights Reserved.
+        Copyright © 2026 Vishal Dhairya. All Rights Reserved.
       </div>
       <div style={styles.copyright}>
         Crafted with Elegance.
