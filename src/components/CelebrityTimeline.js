@@ -13,11 +13,20 @@ function CelebrityTimeline() {
     },
     {
       year: "2026",
-      title: "Content Creation Space",
+      title: "Inside The Match",
       desc: "An in-depth look into the metrics, creative decisions, and behind-the-scenes effort that goes into building a brand in the digital content creation era.",
       youtube: {
         id: "-55BwfZ82dE",
         views: "6.5K Views",
+      }
+    },
+    {
+      year: "2026",
+      title: "Inside The Match",
+      desc: "An in-depth look into the metrics, creative decisions, and behind-the-scenes effort that goes into building a brand in the digital content creation era.",
+      youtube: {
+        id: "Bus6L6JMbP4",
+        views: "1.5K Views",
       }
     },
   ];
@@ -79,6 +88,7 @@ function CelebrityTimeline() {
       fontSize: '1.05rem',
       lineHeight: '1.8',
       color: 'var(--text-slate)',
+      fontFamily: 'var(--font-serif)',
       fontWeight: '300',
       margin: '0 0 24px 0',
     },
@@ -143,7 +153,7 @@ function CelebrityTimeline() {
 
   return (
     <section id="biography" style={styles.section}>
-      <h2 style={styles.heading}>Selected Milestones</h2>
+      <h2 style={styles.heading}>Videos</h2>
 
       <div style={styles.listContainer}>
         {milestones.map((item, index) => {

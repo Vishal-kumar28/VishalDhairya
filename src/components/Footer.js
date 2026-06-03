@@ -33,7 +33,7 @@ function Footer() {
       opacity: '0.5'
     },
     copyright: {
-      fontFamily: 'var(--font-sans)',
+      fontFamily: 'var(--font-sans-serif)',
       fontSize: '0.85rem',
       color: 'var(--text-slate)',
       letterSpacing: '0.5px',

@@ -48,8 +48,8 @@ function About() {
       paddingLeft: '20px'
     },
     story: {
-      fontFamily: 'var(--font-sans)',
-      fontSize: '1.05rem',
+      fontFamily: 'var(--font-serif)',
+      fontSize: '1.20rem',
       lineHeight: '1.9',
       color: 'var(--text-slate)',
       fontWeight: '300',
