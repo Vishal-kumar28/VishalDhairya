@@ -1,43 +1,41 @@
 import React from 'react';
-// Premium modern icons ko import kiya
-import { FaFacebookF, FaInstagram, FaLinkedin, FaTiktok, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
 function CelebritySocial() {
-  // Aap apne asli social media links yahan '#' ki jagah daal sakte hain
   const socials = [
-    
-    { id: 1, icon: <FaInstagram />, url: 'https://instagram.com', label: 'Instagram' },
-    { id: 2, icon: <FaLinkedin />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { id: 3, icon: <FaTwitter />, url: 'https://twitter.com', label: 'Twitter' },
-    { id: 4, icon: <FaYoutube />, url: 'https://youtube.com', label: 'YouTube' },
+    { id: 2, icon: <FaInstagram />, url: 'https://instagram.com/diosvishal', label: 'Instagram' },
+    { id: 4, icon: <FaTwitter />, url: 'https://x.com/VishalKumr28?s=09', label: 'Twitter' },
+    { id: 5, icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/vishal-kumar-b34239254/', label: 'LinkedIn' },
+    { id: 6, icon: <FaYoutube />, url: 'https://www.youtube.com/@InsideTheMatchByVishal', label: 'YouTube' },
   ];
 
   const styles = {
     section: {
-      backgroundColor: 'var(--bg-celebrity)', // Reference image jaisa premium rich matte black banner
-      padding: '60px 20px',
+      backgroundColor: 'transparent', // 🌟 Koi dark banner nahi, background same gallery jaisa normal rahega
+      padding: '60px max(5vw, 20px)',
       textAlign: 'center',
       width: '100%',
+      borderTop: '1px solid rgba(0,0,0,0.05)',
       boxSizing: 'border-box'
     },
     heading: {
       fontFamily: 'var(--font-serif)',
       fontSize: '2.5rem',
-      fontWeight: '300',
-      color: 'var(--text-onyx)', // Soft off-white color text ke liye taki aankhon me chubhe nahi
+      fontWeight: '400',
+      color: 'var(--text-onyx)', // 🌟 Text color deep dark charcoal (same as Gallery heading)
       marginBottom: '30px',
+      textTransform: 'uppercase',
       letterSpacing: '2px',
-        textTransform: 'uppercase',
     },
     iconContainer: {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      gap: '35px', // Icons ke beech ka clean distance
+      gap: '40px', 
       flexWrap: 'wrap'
     },
     iconLink: {
-      color: 'rgba(42, 40, 37, 0.7)', // Shuruat me icons thode muted/matte white dikhenge
+      color: 'var(--text-slate)', // 🌟 Icons ka color muted slate grey (same as Gallery filters)
       fontSize: '1.8rem',
       transition: 'all 0.3s ease',
       display: 'inline-flex',
@@ -60,13 +58,13 @@ function CelebritySocial() {
             rel="noopener noreferrer"
             aria-label={social.label}
             style={styles.iconLink}
-            // Hover effects pure vanilla inline styles ke sath handle kiya
+            // Hover karne par color dark black hoga aur soft scale hoga
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = '#FFF';
-              e.currentTarget.style.transform = 'scale(1.15)';
+              e.currentTarget.style.color = 'var(--text-onyx)';
+              e.currentTarget.style.transform = 'scale(1.12)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.color = 'rgba(236, 230, 220, 0.7)';
+              e.currentTarget.style.color = 'var(--text-slate)';
               e.currentTarget.style.transform = 'scale(1)';
             }}
           >

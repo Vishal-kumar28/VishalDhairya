@@ -43,7 +43,7 @@ function Footer() {
 
   return (
     <footer style={styles.footer}>
-      {/* Social Media Links (No Icons, Just Pure Elegant Text) */}
+      {/* Social Media Links (No Icons, Just Pure Elegant Text)
       <div style={styles.socialLinks}>
         <a href="https://instagram.com/diosvishal" target="_blank" rel="noreferrer" style={styles.link}
            onMouseEnter={(e) => e.target.style.color = 'var(--text-onyx)'}
@@ -66,9 +66,10 @@ function Footer() {
           Youtube
         </a>
       </div>
+      */}
 
       {/* A Luxury Subtle Line */}
-      <div style={styles.divider}></div>
+      {/* <div style={styles.divider}></div> */}
 
       {/* Copyright Text */}
       <div style={styles.copyright}>

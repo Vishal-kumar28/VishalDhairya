@@ -32,7 +32,7 @@ function App() {
           
           <About />
           <CelebrityTimeline />
-          {/* <CelebritySocial /> */}
+          <CelebritySocial />
           <CelebrityGallery />
         </>
       ) : (
