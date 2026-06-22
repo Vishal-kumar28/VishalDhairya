@@ -1,12 +1,13 @@
 import React from 'react';
-import { FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
+// import { FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import { BsTwitterX, BsInstagram, BsYoutube, BsLinkedin } from 'react-icons/bs'; // Bootstrap ka X icon
 
 function CelebritySocial() {
   const socials = [
-    { id: 2, icon: <FaInstagram />, url: 'https://instagram.com/diosvishal', label: 'Instagram' },
-    { id: 4, icon: <FaTwitter />, url: 'https://x.com/VishalKumr28?s=09', label: 'Twitter' },
-    { id: 5, icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/vishal-kumar-b34239254/', label: 'LinkedIn' },
-    { id: 6, icon: <FaYoutube />, url: 'https://www.youtube.com/@InsideTheMatchByVishal', label: 'YouTube' },
+    { id: 2, icon: <BsInstagram />, url: 'https://instagram.com/diosvishal', label: 'Instagram' },
+    { id: 4, icon: <BsTwitterX />, url: 'https://x.com/VishalKumr28?s=09', label: 'X' }, // BsTwitterX use kiya
+    { id: 5, icon: <BsLinkedin />, url: 'https://www.linkedin.com/in/vishal-kumar-b34239254/', label: 'LinkedIn' },
+    { id: 6, icon: <BsYoutube />, url: 'https://www.youtube.com/@InsideTheMatchByVishal', label: 'YouTube' },
   ];
 
   const styles = {
